@@ -1,1 +1,0 @@
-var baseURL = "https://kriya-c6ibw6bqxq-el.a.run.app";
