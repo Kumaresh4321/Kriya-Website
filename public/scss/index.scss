@@ -1,0 +1,1319 @@
+body {
+    background-color: #18191B;
+}
+
+.holder {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.right-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.right-box button {
+    width: auto;
+    height: auto;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    background-color: transparent;
+    transition: 0.5s;
+    color: white;
+}
+
+.right-box button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+#news-btn,
+#login-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: auto;
+    position: absolute;
+    font-size: 22px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+#news-btn {
+    bottom: 20px;
+    left: 20px;
+}
+
+#login-btn {
+    top: 20px;
+    right: 20px;
+}
+
+#news-btn span,
+#login-btn span {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: center;
+    display: flex;
+    letter-spacing: 1.5px;
+}
+
+#news-btn span {
+    bottom: 4.5em;
+}
+
+#login-btn span {
+    top: 4.5em;
+}
+
+#news-btn:hover,
+#login-btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s;
+    background-color: white;
+}
+
+#news-btn:hover span,
+#login-btn:hover span {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.right-box .live-news {
+    display: none;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0%;
+    bottom: 0;
+    z-index: 10;
+    text-align: center;
+    line-height: 2em;
+    letter-spacing: 1px;
+    background-color: #f7f8f9af;
+    transition: 0.5s;
+}
+
+.right-box .live-news>div {
+    width: 380px;
+    height: 380px;
+    padding: 50px;
+    margin: 0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #18191B;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -190px;
+    margin-top: -190px;
+    color: white !important;
+    -webkit-animation: zoom 3s linear infinite;
+    animation: zoom 3s linear infinite;
+}
+
+.live-news h3 {
+    font-family: "Open+Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.live-news p {
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.right-box .social-media-icons {
+    position: absolute;
+    right: 25px;
+    bottom: 8px;
+}
+
+.right-box .social-media-icons a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    font-size: 22px;
+    float: right;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.right-box .social-media-icons a:hover {
+    transform: translate(0, -10px);
+    transition: 0.5s;
+    background-color: #F7F8F9;
+}
+
+.playstore {
+    width: 300px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: absolute;
+    margin-left: -180px;  
+}
+
+.playstore div.btn-store {
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 17px;
+    transition: 0.5s;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #18191B;
+}
+
+.playstore div.close-store {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: -30px;
+    top: -3px;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.playstore div.close-store:hover {
+    color: #EB167F;
+    cursor: pointer;
+}
+
+.playstore span {
+    margin-top: -7px;
+}
+
+.playstore a {
+    color: white;
+    text-decoration: none;
+    font-family: "Dosis", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.playstore div.btn-store:hover a {
+    color: black;
+}
+
+.playstore div.btn-store:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+    color: black;
+    cursor: pointer;
+}
+
+.playstore img {
+    width: 20px;
+    height: 25px;
+    margin-right: 1em;
+}
+
+.inner-circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-animation: zoom 3s linear infinite;
+    animation: zoom 3s linear infinite;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@-webkit-keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.85);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.85);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.inner-circle img {
+    width: 213px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.inner-circle:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.outer-circle {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(#873FF8, #EB167F);
+    -webkit-animation: rotate 10s linear infinite;
+    animation: rotate 10s linear infinite;
+}
+
+.outer-circle div {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 50%;
+    position: relative;
+    -webkit-animation: rotate_opp 10s linear infinite;
+    animation: rotate_opp 10s linear infinite;
+}
+
+.outer-circle div p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    font-family: "Dosis", sans-serif;
+    animation: rotate 10s linear infinite;
+}
+
+.outer-circle div p#circle-text-rev {
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    margin-right: -10.5px;
+}
+
+@-webkit-keyframes rotate_opp {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotate_opp {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.menu-icons div:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu-icons div a {
+    transition: 0.5s;
+    color: black;
+    font-size: 20px;
+}
+
+.menu-icons div:hover i {
+    transition: 0.5s;
+    -webkit-animation: icon-rotate 0.5s linear;
+    animation: icon-rotate 0.5s linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes icon-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes icon-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.menu-icons span {
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: center;
+    display: flex;
+    letter-spacing: 1.5px;
+}
+
+.menu-icons div:nth-child(6) span {
+    width: 60px;
+    margin-left: calc(-30px + 50%);
+}
+
+.menu-icons div:nth-child(1) span,
+.menu-icons div:nth-child(2) span,
+.menu-icons div:nth-child(3) span,
+.menu-icons div:nth-child(4) span,
+.menu-icons div:nth-child(5) span,
+.menu-icons div:nth-child(6) span,
+.menu-icons div:nth-child(7) span,
+.menu-icons div:nth-child(8) span,
+.menu-icons div:nth-child(9) span,
+.menu-icons div:nth-child(10) span,
+.menu-icons div:nth-child(11) span,
+.menu-icons div:nth-child(12) span,
+.menu-icons div:nth-child(13) span {
+    top: 3em;
+}
+
+.menu-icons div:nth-child(1):hover span,
+.menu-icons div:nth-child(2):hover span,
+.menu-icons div:nth-child(3):hover span,
+.menu-icons div:nth-child(4):hover span,
+.menu-icons div:nth-child(5):hover span,
+.menu-icons div:nth-child(6):hover span,
+.menu-icons div:nth-child(7):hover span,
+.menu-icons div:nth-child(8):hover span,
+.menu-icons div:nth-child(9):hover span,
+.menu-icons div:nth-child(10):hover span,
+.menu-icons div:nth-child(11):hover span,
+.menu-icons div:nth-child(12):hover span,
+.menu-icons div:nth-child(13):hover span {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#id-modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0em;
+    border: 25px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    scrollbar-width: none;
+    color: #18191B;
+    font-family: "Dosis", sans-serif !important;
+}
+
+.modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-content {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+    margin: auto;
+    padding: 0px;
+    background-color: #F6F7F8;
+    overflow: auto;
+    z-index: 999;
+    color: #18191B;
+    font-family: "Dosis", sans-serif !important;
+}
+
+.modal_close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal_close:hover,
+.modal_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_open {
+    background-image: linear-gradient(#873FF8, #EB167F);
+    height: auto;
+    margin-left: -1px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+span {
+    font-family: "Dosis", sans-serif !important;
+}
+
+
+
+/*Small screen*/
+
+@media (max-width: 576px) {
+    .right-box .social-media-icons {
+        right: 7px;
+        bottom: 11px;
+    }
+    .right-box .social-media-icons a {
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 19px;
+    }
+    .right-box button {
+        top: 15px;
+        left: 15px;
+    }
+    .inner-circle {
+        width: 110px;
+        height: 110px;
+    }
+    .inner-circle img {
+        width: 110px;
+    }
+    .outer-circle {
+        width: 170px;
+        height: 170px;
+    }
+    .outer-circle div {
+        padding: 3px;
+    }
+    .outer-circle div p {
+        font-size: 13px;
+        letter-spacing: normal;
+    }
+    .outer-circle div p#circle-text-rev {
+        bottom: 0px;
+        margin-right: -3px;
+    }
+    #news-btn span,
+    #login-btn span {
+        font-size: 12px;
+        opacity: 1;
+    }
+    #news-btn span {
+        bottom: 3.5em;
+    }
+    #login-btn span {
+        top: 3.5em;
+    }
+    $num-elements: 9;
+    $angle: (360 / $num-elements);
+    $rot: 0;
+    $radius: 270px;
+    $circle-size: 32px;
+    .menu-icons {
+        display: none;
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: transparent;
+        transition: 0.5s;
+    }
+    .menu-icons div {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #F7F8F9;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -16px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
+    .menu-icons div a {
+        font-size: 16px;
+    }
+    @for $i from 1 through $num-elements {
+        .menu-icons div:nth-child(#{$i}) {
+            transform: rotate($rot * 1deg) translate($radius / 2) rotate($rot * -1deg);
+        }
+        $rot: $rot+$angle;
+    }
+    .menu-icons span {
+        opacity: 1 !important;
+        font-size: 12px;
+    }
+    .menu-icons div:nth-child(1) span,
+    .menu-icons div:nth-child(2) span,
+    .menu-icons div:nth-child(3) span,
+    .menu-icons div:nth-child(4) span,
+    .menu-icons div:nth-child(5) span,
+    .menu-icons div:nth-child(6) span,
+    .menu-icons div:nth-child(7) span,
+    .menu-icons div:nth-child(8) span,
+    .menu-icons div:nth-child(9) span,
+    .menu-icons div:nth-child(10) span,
+    .menu-icons div:nth-child(11) span,
+    .menu-icons div:nth-child(12) span,
+    .menu-icons div:nth-child(13) span {
+        top: 2.8em;
+    }
+    #news-btn,
+    #login-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 17px;
+    }
+    #news-btn {
+        bottom: 13px;
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+    #login-btn {
+        top: 15px;
+        right: 15px;
+    }
+    .right-box .live-news {
+        width: 310px;
+        height: 310px;
+        line-height: 1.7em;
+        font-size: 15px;
+    }
+    .right-box button {
+        top: 15px;
+        left: 15px;
+    }
+    .right-box .live-news>div {
+        width: 270px;
+        height: 270px;
+        padding: 30px;
+        margin-left: -135px;
+        margin-top: -135px;
+    }
+    .live-news p {
+        font-size: 13px;
+    }
+    .live-news h3 {
+        font-size: 21px;
+    }
+    .modal {
+        border: 20px solid rgba(0, 0, 0, 0);
+    }
+    .modal-content {
+        width: 100%;
+        padding: 0px;
+    }
+    .modal_close {
+        font-size: 22px;
+    }
+    .playstore {
+        bottom: 60px;
+        right: 18px;
+    }
+    .playstore {
+        width: 170px;
+        height: 35px;
+        margin-left: 10px;  
+    }  
+    .playstore div.btn-store {
+        font-size: 11px;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+    }   
+    .playstore div.close-store {
+        width: 15px;
+        height: 15px;
+        right: -20px;
+        top: -3px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .playstore span {
+        margin-top: -3px;
+    }
+    .playstore a {
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    .playstore img {
+        width: 15px;
+        height: 20px;
+        margin-right: .5em;
+    }
+}
+
+
+/*Mobile*/
+
+@media (min-width: 577px) and (max-width: 767px) {
+    .right-box .social-media-icons {
+        right: 7px;
+        bottom: 11px;
+    }
+    .right-box .social-media-icons a {
+        width: 40px;
+        height: 40px;
+        margin-left: 7px;
+        margin-right: 7px;
+        font-size: 19px;
+    }
+    #news-btn span,
+    #login-btn span {
+        font-size: 12px;
+        opacity: 1;
+    }
+    #news-btn span {
+        bottom: 3.5em;
+    }
+    #login-btn span {
+        top: 3.5em;
+    }
+    .inner-circle {
+        width: 150px;
+        height: 150px;
+    }
+    .inner-circle img {
+        width: 145px;
+    }
+    .outer-circle {
+        width: 230px;
+        height: 230px;
+    }
+    .outer-circle div {
+        padding: 5px;
+    }
+    .outer-circle div p {
+        font-size: 16px;
+    }
+    .outer-circle div p#circle-text-rev {
+        bottom: 3px;
+        margin-right: -5px;
+    }
+    $num-elements: 11;
+    $angle: (360 / $num-elements);
+    $rot: 0;
+    $radius: 370px;
+    $circle-size: 37px;
+    .menu-icons {
+        display: none;
+        width: 370px;
+        height: 370px;
+        border-radius: 50%;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: transparent;
+        transition: 0.5s;
+    }
+    .menu-icons div {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        background-color: #F7F8F9;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -18.5px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
+    .menu-icons div a {
+        font-size: 16px;
+    }
+    @for $i from 1 through $num-elements {
+        .menu-icons div:nth-child(#{$i}) {
+            transform: rotate($rot * 1deg) translate($radius / 2) rotate($rot * -1deg);
+        }
+        $rot: $rot+$angle;
+    }
+    #news-btn,
+    #login-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 17px;
+    }
+    #news-btn {
+        bottom: 18px;
+        left: 18px;
+    }
+    #login-btn {
+        top: 18px;
+    }
+    .right-box button {
+        top: 18px;
+        left: 18px;
+    }
+    .right-box .live-news {
+        width: 470px;
+        height: 470px;
+        line-height: 1.7em;
+        font-size: 15px;
+    }
+    .right-box .live-news>div {
+        width: 400px;
+        height: 400px;
+        padding: 30px;
+        margin-left: -200px;
+        margin-top: -200px;
+    }
+    .modal {
+        border: 0px solid rgba(0, 0, 0, 0);
+    }
+    .modal-content {
+        width: 130%;
+        padding: 0px;
+    }
+    .modal_close {
+        font-size: 22px;
+    }
+    .playstore {
+        bottom: 70px;
+        right: 30px;
+    }
+    .playstore {
+        width: 200px;
+        height: 50px;
+        margin-left: 10px;  
+    }  
+    .playstore div.btn-store {
+        font-size: 13px;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+    }   
+    .playstore div.close-store {
+        width: 20px;
+        height: 20px;
+        right: -30px;
+        top: -3px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .playstore span {
+        margin-top: -7px;
+    }
+    .playstore a {
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    .playstore img {
+        width: 15px;
+        height: 20px;
+        margin-right: .5em;
+    }
+}
+
+
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    $num-elements: 8;
+    $angle: (360 / $num-elements);
+    $rot: 0;
+    $radius: 490px;
+    $circle-size: 43px;
+    .menu-icons {
+        display: none;
+        width: 490px;
+        height: 490px;
+        border-radius: 50%;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: transparent;
+        transition: 0.5s;
+    }
+    .menu-icons div {
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        background-color: #F7F8F9;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -21.5px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
+    @for $i from 1 through $num-elements {
+        .menu-icons div:nth-child(#{$i}) {
+            transform: rotate($rot * 1deg) translate($radius / 2) rotate($rot * -1deg);
+        }
+        $rot: $rot+$angle;
+    }
+    .playstore {
+        bottom: 100px;
+        right: 60px;
+    }
+}
+
+
+/*Desktop*/
+
+@media (min-width: 1200px) {
+    $num-elements: 8;
+    $angle: (360 / $num-elements);
+    $rot: 0;
+    $radius: 490px;
+    $circle-size: 43px;
+    .menu-icons {
+        display: none;
+        width: 490px;
+        height: 490px;
+        border-radius: 50%;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: transparent;
+        transition: 0.5s;
+    }
+    .menu-icons div {
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        background-color: #F7F8F9;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -21.5px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
+    @for $i from 1 through $num-elements {
+        .menu-icons div:nth-child(#{$i}) {
+            transform: rotate($rot * 1deg) translate($radius / 2) rotate($rot * -1deg);
+        }
+        $rot: $rot+$angle;
+    }
+    .playstore {
+        left: 40%;
+        bottom: 20px;
+    }
+}
+
+
+/*# sourceMappingURL=index.css.map */
+
+.menu-icons-1 div:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu-icons-1 div a {
+    transition: 0.5s;
+    color: black;
+    font-size: 20px;
+}
+
+.menu-icons-1 div:hover i {
+    transition: 0.5s;
+    -webkit-animation: icon-rotate 0.5s linear;
+    animation: icon-rotate 0.5s linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+@keyframes icon-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.menu-icons-1 span {
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: center;
+    display: flex;
+    letter-spacing: 1.5px;
+}
+
+.menu-icons-1 div:nth-child(6) span {
+    width: 60px;
+    /* margin-left: calc(-30px + 50%); */
+}
+
+.menu-icons-1 div:nth-child(1) span,
+.menu-icons-1 div:nth-child(2) span,
+.menu-icons-1 div:nth-child(3) span,
+.menu-icons-1 div:nth-child(4) span,
+.menu-icons-1 div:nth-child(5) span,
+.menu-icons-1 div:nth-child(6) span,
+.menu-icons-1 div:nth-child(7) span,
+.menu-icons-1 div:nth-child(8) span,
+.menu-icons-1 div:nth-child(9) span,
+.menu-icons-1 div:nth-child(10) span,
+.menu-icons-1 div:nth-child(11) span,
+.menu-icons-1 div:nth-child(12) span,
+.menu-icons-1 div:nth-child(13) span {
+    top: 3em;
+}
+
+.menu-icons-1 div:nth-child(1):hover span,
+.menu-icons-1 div:nth-child(2):hover span,
+.menu-icons-1 div:nth-child(3):hover span,
+.menu-icons-1 div:nth-child(4):hover span,
+.menu-icons-1 div:nth-child(5):hover span,
+.menu-icons-1 div:nth-child(6):hover span,
+.menu-icons-1 div:nth-child(7):hover span,
+.menu-icons-1 div:nth-child(8):hover span,
+.menu-icons-1 div:nth-child(9):hover span,
+.menu-icons-1 div:nth-child(10):hover span,
+.menu-icons-1 div:nth-child(11):hover span,
+.menu-icons-1 div:nth-child(12):hover span,
+.menu-icons-1 div:nth-child(13):hover span {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+
+/*Small screen*/
+
+@media (max-width: 576px) {
+    $num-elements-1: 8;
+    $angle-1: (360 / $num-elements-1);
+    $rot-1: 0;
+    $radius-1: 270px;
+    $circle-size-1: 32px;
+    .menu-icons-1 {
+        display: none;
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: transparent;
+        transition: 0.5s;
+    }
+    .menu-icons-1 div {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #F7F8F9;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -16px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
+    .menu-icons-1 div a {
+        font-size: 16px;
+    }
+    @for $j from 1 through $num-elements-1 {
+        .menu-icons-1 div:nth-child(#{$j}) {
+            transform: rotate($rot-1 * 1deg) translate($radius-1 / 2) rotate($rot-1 * -1deg);
+        }
+        $rot-1: $rot-1+$angle-1;
+    }
+    .menu-icons-1 span {
+        opacity: 1 !important;
+        font-size: 12px;
+    }
+    .menu-icons-1 div:nth-child(1) span,
+    .menu-icons-1 div:nth-child(2) span,
+    .menu-icons-1 div:nth-child(3) span,
+    .menu-icons-1 div:nth-child(4) span,
+    .menu-icons-1 div:nth-child(5) span,
+    .menu-icons-1 div:nth-child(6) span,
+    .menu-icons-1 div:nth-child(7) span,
+    .menu-icons-1 div:nth-child(8) span,
+    .menu-icons-1 div:nth-child(9) span,
+    .menu-icons-1 div:nth-child(10) span,
+    .menu-icons-1 div:nth-child(11) span,
+    .menu-icons-1 div:nth-child(12) span,
+    .menu-icons-1 div:nth-child(13) span {
+        top: 2.8em;
+    }
+    .menu-icons-1 div:nth-child(6) span {
+        margin-left: 2em;
+    }
+}
+
+
+/*Mobile*/
+
+@media (min-width: 577px) and (max-width: 767px) {
+    $num-elements-1: 8;
+    $angle-1: (360 / $num-elements-1);
+    $rot-1: 0;
+    $radius-1: 370px;
+    $circle-size-1: 37px;
+    .menu-icons-1 {
+        display: none;
+        width: 370px;
+        height: 370px;
+        border-radius: 50%;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: transparent;
+        transition: 0.5s;
+    }
+    .menu-icons-1 div {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        background-color: #F7F8F9;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -18.5px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
+    .menu-icons-1 div a {
+        font-size: 16px;
+    }
+    @for $j from 1 through $num-elements-1 {
+        .menu-icons-1 div:nth-child(#{$j}) {
+            transform: rotate($rot-1 * 1deg) translate($radius-1 / 2) rotate($rot-1 * -1deg);
+        }
+        $rot-1: $rot-1+$angle-1;
+    }
+    .menu-icons-1 span {
+        opacity: 1 !important;
+        font-size: 14px;
+    }
+    .menu-icons-1 div:nth-child(1) span,
+    .menu-icons-1 div:nth-child(2) span,
+    .menu-icons-1 div:nth-child(3) span,
+    .menu-icons-1 div:nth-child(4) span,
+    .menu-icons-1 div:nth-child(5) span,
+    .menu-icons-1 div:nth-child(6) span,
+    .menu-icons-1 div:nth-child(7) span,
+    .menu-icons-1 div:nth-child(8) span,
+    .menu-icons-1 div:nth-child(9) span,
+    .menu-icons-1 div:nth-child(10) span,
+    .menu-icons-1 div:nth-child(11) span,
+    .menu-icons-1 div:nth-child(12) span,
+    .menu-icons-1 div:nth-child(13) span {
+        top: 2.8em;
+    }
+}
+
+
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    $num-elements-1: 8;
+    $angle-1: (360 / $num-elements-1);
+    $rot-1: 0;
+    $radius-1: 490px;
+    $circle-size-1: 43px;
+    .menu-icons-1 {
+        display: none;
+        width: 490px;
+        height: 490px;
+        border-radius: 50%;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: transparent;
+        transition: 0.5s;
+    }
+    .menu-icons-1 div {
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        background-color: #F7F8F9;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -21.5px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
+    @for $j from 1 through $num-elements-1 {
+        .menu-icons-1 div:nth-child(#{$j}) {
+            transform: rotate($rot-1 * 1deg) translate($radius-1 / 2) rotate($rot-1 * -1deg);
+        }
+        $rot-1: $rot-1+$angle-1;
+    }
+}
+
+
+/*Desktop*/
+
+@media (min-width: 1200px) {
+    $num-elements-1: 8;
+    $angle-1: (360 / $num-elements-1);
+    $rot-1: 0;
+    $radius-1: 490px;
+    $circle-size-1: 43px;
+
+    .menu-icons-1 {
+        display: none;
+        width: 490px;
+        height: 490px;
+        border-radius: 50%;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: transparent;
+        transition: 0.5s;
+    }
+    .menu-icons-1 div {
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        background-color: #F7F8F9;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -21.5px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
+        @for $j from 1 through $num-elements-1 {
+        .menu-icons-1 div:nth-child(#{$j}) {
+            transform: rotate($rot-1 * 1deg) translate($radius-1 / 2) rotate($rot-1 * -1deg);
+        }
+        $rot-1: $rot-1+$angle-1;
+    }
+}

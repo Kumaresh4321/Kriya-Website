@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Kriya 2022" />
+    <meta
+      name="description"
+      content="KRIYA - the brain child of the Students Union is the conglomeration of the erudite brains across the Indian heartland. It is the biggest conflux of students, industry and academia for a thoroughly enriching experience. Be it the video conferencing from the reverend professors of MIT, NASA, Nobel Laureates or the guest lecture from industry stalwarts or eminent personalities around the country, Kriya has it."
+    />
+    <meta
+      name="keywords"
+      content="psg kriya,kriya2022,kriya 2022,psg tech,psg tech kriya,2022 kriya,psg kriya,kriya 2022,kriya 2k22,psg tech symposium,psg kriya,the bridge,psg bridge, su kriya, students union kriya"
+    />
+    <meta
+      name="author"
+      content="Koushik Balaji, Rhubanraj P, B Srivathsan, Sri Raman B, A Kirthic Vishnu, Adharsh Subramanian, Kumaresh S"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.6/css/solid.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="scss/index.css" />
+    <link rel="stylesheet" href="css/common-styles.css" />
+    <link rel="stylesheet" href="css/login-modal.css" />
+    <link rel="stylesheet" href="css/index-navbar.css" />
+    <link rel="stylesheet" href="css/loader.css" />
+    <script
+      src="https://kit.fontawesome.com/a74d0f3882.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Kriya'22</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/png" />
+    <script src="js/jquery-latest.min.js"></script>
+    <script src="js/jquery.lettering-0.6.1.min.js"></script>
+  </head>
+
+  <body>
+    <style>
+      #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+    </style>
+    <!-- SPINNER -->
+    <div id="preloader">
+      <img class="loader-image" src="images/apple-touch-icon.png" alt="" />
+      <div id="loader">&nbsp;</div>
+    </div>
+    <main>
+      <div class="holder">
+        <div class="right-box grid-lg-12 grid-md-12 grid-sm-12 grid-xs-12">
+          <canvas class="diamonds"></canvas>
+          <div id="particles-js"></div>
+          <div class="container" id="btn1">
+            <div id="burger">
+              <div class="bun top"></div>
+              <div class="filling"></div>
+              <div class="bun bottom"></div>
+            </div>
+          </div>
+
+          <div id="login-btn" onclick="javascript:check()">
+            <i id="loginimage" class="fas fa-user-circle"></i
+            ><span id="logintext">Login</span>
+          </div>
+
+          <div id="news-btn">
+            <i class="fas fa-newspaper"></i><span>Live News</span>
+          </div>
+
+          <div class="live-news" id="news">
+            <div>
+              <h3>Live News</h3>
+              <p>
+                "Nothing great comes without a risk". Take a leap at the biggest
+                technical fest KRIYA and show them the techno wizard you are.
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="playstore" id="store">
+            <div class="btn-store">
+              <a
+                href="https://play.google.com/store/apps/details?id=tpo.kriya"
+                target="_blank"
+                ><img src="images/playstore.png" /> Download on Playstore</a
+              > 
+            </div> 
+
+            <div class="close-store">
+              <span class="close-store-span">&times;</span>
+            </div>
+          </div>  -->
+
+          <div class="social-media-icons">
+            <a href="mailto:helpdesk@psgkriya.in" target="_blank"
+              ><i class="far fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UC3p_a8g876d50MxI7Kg5cMw"
+              target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://wa.me/917358486090" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://instagram.com/kriya_psgtech?igshid=1448hkeq83he"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/psgkriya/" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+
+        <div id="id-modal">
+          <div class="modal-content">
+            <div class="modal-body modal_open">
+              <span class="modal_close">&times;</span>
+              <div id="logsign">
+                <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                  <div>
+                    <span class="heading_left">LOG IN</span
+                    ><span class="heading_right">SIGN UP</span>
+                  </div>
+                  <input
+                    class="checkbox glyphicon glyphicon-user"
+                    type="checkbox"
+                    id="toggle"
+                    name="toggle"
+                  />
+                  <label for="toggle"></label>
+                  <div class="card-3d-wrap mx-auto">
+                    <div class="card-3d-wrapper">
+                      <div class="card-front">
+                        <div class="center-wrap">
+                          <div class="section text-center">
+                            <h4 class="mb-4 pb-3 side_head">LOG IN</h4>
+                            <form method="post" action="javascript:login()">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  name="kriya_id"
+                                  class="form-style"
+                                  placeholder="Enter Your Kriya Id"
+                                  id="kriya_id"
+                                  required="true"
+                                />
+                                <i
+                                  class="input-icon glyphicon glyphicon-edit"
+                                ></i>
+                              </div>
+                              <div class="form-group mt-2">
+                                <input
+                                  type="password"
+                                  name="pass"
+                                  class="form-style"
+                                  placeholder="Enter Password"
+                                  id="password"
+                                  autocomplete="off"
+                                  required="true"
+                                  oninput="send()"
+                                />
+                                <i
+                                  class="input-icon glyphicon glyphicon-lock"
+                                ></i>
+                                <i
+                                  id="login-password-icon"
+                                  class="glyphicon glyphicon-eye-close"
+                                  onclick="login_password()"
+                                ></i>
+                              </div>
+                              <button class="btn mt-4">LOG IN</button>
+                              <p class="mb-0 mt-4 text-center">
+                                <a
+                                  id="forpass"
+                                  class="link"
+                                  onclick="forgot_password(1)"
+                                  >Forgot Your Password?</a
+                                >
+                              </p>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-back">
+                        <div class="center-wrap">
+                          <div class="section text-center">
+                            <h4 class="mb-4 pb-3 side_head">SIGN UP</h4>
+                            <form method="post" action="javascript:valid()">
+                              <div class="radio form-group mt-2 signup_radio">
+                                <label class="radio_text"
+                                  >PSG Tech Student?</label
+                                >
+                                <label class="radio_but"
+                                  ><input
+                                    type="radio"
+                                    onclick="yesnoCheck();"
+                                    name="yesno"
+                                    id="yesCheck"
+                                    required="true"
+                                  />YES</label
+                                >
+                                <label class="radio_but"
+                                  ><input
+                                    type="radio"
+                                    onclick="yesnoCheck();"
+                                    name="yesno"
+                                    id="noCheck"
+                                    required="true"
+                                  />NO</label
+                                >
+                                <i class="input-icon uil uil-at"></i>
+                              </div>
+                              <div class="form-group mt-2">
+                                <input
+                                  type="email"
+                                  name="email"
+                                  class="form-style"
+                                  id="s_email"
+                                  placeholder="Mail Id"
+                                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                  required="true"
+                                />
+                                <i
+                                  class="input-icon glyphicon glyphicon-envelope"
+                                ></i>
+                              </div>
+                              <div class="form-group mt-2 pos">
+                                <input
+                                  id="pass"
+                                  type="password"
+                                  name="pass"
+                                  class="form-style"
+                                  placeholder="Enter Password"
+                                  id="pass"
+                                  autocomplete="off"
+                                  required="true"
+                                  oninput="send()"
+                                />
+                                <i
+                                  class="input-icon glyphicon glyphicon-lock"
+                                ></i>
+                                <i
+                                  id="signup-password-icon"
+                                  class="glyphicon glyphicon-eye-close"
+                                  onclick="signup_password()"
+                                ></i>
+                              </div>
+                              <div class="form-group mt-2 pos">
+                                <input
+                                  id="con_pass"
+                                  type="password"
+                                  name="pass"
+                                  class="form-style"
+                                  placeholder="Confirm Password"
+                                  id="con_pass"
+                                  autocomplete="off"
+                                  required="true"
+                                  oninput="send()"
+                                />
+                                <i
+                                  class="input-icon glyphicon glyphicon-lock"
+                                ></i>
+                                <i
+                                  id="signup-confirm-password-icon"
+                                  class="glyphicon glyphicon-eye-close"
+                                  onclick="signup_confirm_password()"
+                                ></i>
+                              </div>
+                              <span id="message" style="color: red"></span
+                              ><br />
+                              <button id="verify" class="btn mt-4">
+                                VERIFY
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <form
+                method="post"
+                id="fpblock"
+                action="javascript:forgot_pass()"
+              >
+                <div class="card-3d-wrap section shift mx-auto">
+                  <div class="card-3d-wrapper">
+                    <div class="card-front">
+                      <div
+                        class="back-outline"
+                        onclick="forgot_password(0)"
+                        style="color: transparent"
+                      >
+                        <div>
+                          <i
+                            class="glyphicon glyphicon-circle-arrow-left fa-3x back-btn"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="center-wrap">
+                        <h4
+                          class="mb-4 pb-3 side_head"
+                          style="text-align: center"
+                        >
+                          RESET PASSWORD
+                        </h4>
+                        <div class="form-group mt-2">
+                          <input
+                            type="email"
+                            name="email"
+                            class="form-style"
+                            placeholder="Enter Email Id"
+                            id="for_email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            required="true"
+                          />
+                          <i
+                            class="input-icon glyphicon glyphicon-envelope"
+                          ></i>
+                        </div>
+                        <div style="text-align: center">
+                          <button class="btn mt-4">RESET</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="navigation"></div>
+
+      <div class="outer-circle">
+        <div >
+          <img src="images/ptech.png" /> 
+        
+        </div>
+      </div>
+
+      <div class="inner-circle" id="btn2">
+        <img src="images/kriya-logo.png" alt="KRIYA" />
+      </div>
+    </main>
+    <script>
+      function check() {
+        if (window.localStorage.getItem("accessToken") == null) {
+          document.getElementById("navigation").innerHTML =
+            '<div class="menu-icons-1" id="nav"><div><a href="event.html"><i class="fas fa-calendar-check"></i></a><span>Events</span></div><div><a href="workshop.html"><i class="fas fa-user-friends"></i></a><span>Workshops</span></div><div><a href="about.html"><i class="fas fa-address-card"></i></a><span>About</span></div><div><a href="team.html"><i class="fas fa-users"></i></a><span>Team</span></div><div><a href="contact.html"><i class="fas fa-phone-alt"></i></a><span>Contact</span></div><div><a href="faq.html"><i class="fas fa-question-circle"></i></a><span>  FAQ</span></div><div id="logindiv" onclick="javascript:validate()"><a href="login.html"><i id="menuloginimage" class="fas fa-sign-in-alt"></i></a><span id="menulogintext">Login</span></div><div><a href="schedule.html"><i class="fas fa-clock"></i></a><span>Schedule</span></div>';
+          document
+            .getElementById("loginimage")
+            .setAttribute("class", "fas fa-sign-in-alt");
+          document.getElementById("logintext").innerHTML = "Login";
+          document
+            .getElementById("menuloginimage")
+            .setAttribute("class", "fas fa-sign-in-alt");
+          document.getElementById("menulogintext").innerHTML = "Login";
+        } else {
+          document.getElementById("navigation").innerHTML =
+            '<div class="menu-icons" id="nav"><div><a href="event.html"><i class="fas fa-calendar-check"></i></a><span>Events</span></div><div><a href="workshop.html"><i class="fas fa-user-friends"></i></a><span>Workshops</span></div><div><a href="about.html"><i class="fas fa-address-card"></i></a><span>About</span></div><div><a href="team.html"><i class="fas fa-users"></i></a><span>Team</span></div><div><a href="contact.html"><i class="fas fa-phone-alt"></i></a><span>Contact</span></div><div><a href="faq.html"><i class="fas fa-question-circle"></i></a><span>  FAQ</span></div><div id="logindiv" onclick="javascript:validate()"><a href="login.html"><i id="menuloginimage" class="fas fa-sign-in-alt"></i></a><span id="menulogintext">Login</span></div><div id="profilediv" style="visibility: hidden;"><a href="profile.html"><i class="fas fa-id-badge"></i></a><span>Profile</span></div><div id="dashboarddiv" style="visibility: hidden;"><a href="dashboard.html"><i class="fas fa-id-card-alt"></i></a><span>Dashboard</span></div><div><a href="schedule.html"><i class="fas fa-clock"></i></a><span>Schedule</span></div></div>';
+          document
+            .getElementById("loginimage")
+            .setAttribute("class", "fa fa-power-off");
+          document.getElementById("logintext").innerHTML = "Logout";
+          document
+            .getElementById("menuloginimage")
+            .setAttribute("class", "fa fa-power-off");
+          document.getElementById("menulogintext").innerHTML = "Logout";
+          document.getElementById("profilediv").style.visibility = "visible";
+          document.getElementById("dashboarddiv").style.visibility = "visible";
+        }
+      }
+      check();
+      $(window).on("load", function () {
+        // makes sure the whole site is loaded
+        $("#status").fadeOut(); // will first fade out the loading animation
+        $("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
+        $("body").delay(350).css({
+          overflow: "visible",
+        });
+      });
+    </script>
+    <script src="js/constants.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/rightclick.js"></script>
+    <script src="js/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="js/stats.min.js"></script>
+    <!-- <script>
+      const mediaQuery = window.matchMedia("(min-width: 1200px)");
+      if (mediaQuery.matches) {
+        new CircleType(document.getElementById("circle-text")).radius(150);
+        new CircleType(document.getElementById("circle-text-rev"))
+          .dir(-1)
+          .radius(150);
+      } else {
+        const mediaQuery1 = window.matchMedia("(min-width: 577px)");
+        if (mediaQuery1.matches) {
+          new CircleType(document.getElementById("circle-text")).radius(100);
+          new CircleType(document.getElementById("circle-text-rev"))
+            .dir(-1)
+            .radius(100);
+        } else {
+          const mediaQuery2 = window.matchMedia("(max-width: 576px)");
+          if (mediaQuery2.matches) {
+            new CircleType(document.getElementById("circle-text")).radius(75);
+            new CircleType(document.getElementById("circle-text-rev"))
+              .dir(-1)
+              .radius(75);
+          }
+        }
+      }
+    </script> -->
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 71,
+            density: { enable: true, value_area: 789.1725525786218 },
+          },
+          color: { value: "#B88A00" },
+          shape: {
+            type: "circle",
+            stroke: { width: 0, color: "#000000" },
+            polygon: { nb_sides: 5 },
+            image: { src: "img/github.svg", width: 100, height: 100 },
+          },
+          opacity: {
+            value: 0.8,
+            random: false,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.6,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: false, mode: "bubble" },
+            resize: true,
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 1 } },
+            bubble: {
+              distance: 400,
+              size: 7.991560911677265,
+              duration: 1.0389029185180445,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 },
+          },
+        },
+        retina_detect: true,
+      });
+      var count_particles, stats, update;
+
+      count_particles = document.querySelector(".js-count-particles");
+      update = function () {
+        if (
+          window.pJSDom[0].pJS.particles &&
+          window.pJSDom[0].pJS.particles.array
+        ) {
+        //   count_particles.innerText =
+        //     window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    </script>
+  </body>
+</html>

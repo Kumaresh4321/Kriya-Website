@@ -1,0 +1,628 @@
+body {
+    background-color: #18191B;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #18191B;
+    padding-bottom: 70px;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-size: 28px;
+    text-align: center !important;
+    font-family: "Open+Sans", sans-serif;
+    text-shadow: #F5B800 0px 0px 6px, #F5B800 0px 0px 10px;
+}
+
+.list {
+    width: 100%;
+    height: 1010px;
+    padding: 50px;
+    padding-top: 90px;
+    background-image: linear-gradient(#ffc20ad5, #FF7770);
+}
+
+.list .nos {
+    height: 380px;
+    padding: 30px 35px;
+    border-radius: 6px;
+    margin-bottom: 3em;
+    transition: 0.5s;
+}
+
+.list .nos:hover {
+    cursor: pointer;
+}
+
+.list .nos .logo-div {
+    width: 100%;
+    height: 70px;
+    padding: 0 1.5em;
+    position: relative;
+    background-color: #19373B;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    transition: 0.5s;
+}
+
+.list .nos .logo-div img {
+    /* position: absolute;
+    top: -70%;
+    left: 1.5em !important;
+    transition: 0.5s; */
+    position: absolute;
+    padding: 10px;
+    border-radius: 50%;
+    top: -70%;
+    background-image: linear-gradient(315deg, #FF928B 0%, #FF7770 74%);
+    transition: 0.5s;
+    left: 1.5em !important;
+}
+
+.list .nos:hover .logo-div img {
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+/* colour hover  */
+.list .nos:hover span {
+    text-shadow: rgb(0, 0, 0) 0px 0px 6px, rgb(0, 0, 0) 0px 0px 10px;
+}
+
+.list .nos span {
+    width: 100%;
+    height: 120px;
+    padding: 17px 1.5em;
+    display: block;
+    transition: 0.5s;
+    background-color: #19373B;
+    color: white;
+    font-size: 20px;
+    line-height: 1.3em;
+    font-weight: 800;
+    text-align: left !important;
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.list .nos>.modal-div {
+    width: 100%;
+    height: 60%;
+    background-color: transparent;
+    transition: 0.5s;
+    padding: 1.5em;
+    color: white;
+    font-family: "Dosis", sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    background-color: #19373B;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.modal-div p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list .nos .modal-div:hover {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.list .nos>div img {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-icons {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #18191B;
+}
+
+.social-media-icons a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    font-size: 22px;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-media-icons a:hover {
+    transform: translate(0, -10px);
+    transition: 0.5s;
+    background-color: #F7F8F9;
+}
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0em;
+    overflow: auto;
+    overflow-x: hidden;
+    border: 25px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 30px 60px;
+    border-radius: 24px;
+    background-color: #18191B;
+    overflow: auto;
+    overflow-x: hidden;
+    color: white !important;
+}
+
+.modal_close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal_close:hover,
+.modal_close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal h4,
+.modal h5 {
+    font-size: 20px;
+    text-align: center !important;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 10px;
+}
+
+.modal h4 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #FFC20A;
+}
+
+.modal h5 {
+    color: #3CC441;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 23px;
+    margin-bottom: 1em;
+}
+
+.description,
+.details {
+    width: 100%;
+    height: auto;
+    font-family: "Dosis", sans-serif;
+    text-align: justify;
+    padding: 20px;
+    line-height: 2em;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin: 2em 0;
+}
+
+.details {
+    margin: 0em 0;
+    padding: 15px 20px;
+}
+
+.description h5,
+.details h5 {
+    text-align: justify !important;
+}
+
+.time,
+.fee,
+.number,
+.date {
+    height: 200px;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.time h5,
+.fee h5,
+.number h5,
+.date h5 {
+    color: #3CC441;
+}
+
+.time span,
+.fee span,
+.number span,
+.date span {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.time div,
+.fee div,
+.number div,
+.date div {
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 2em;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Dosis", sans-serif;
+    background-color: #FFC20A;
+    color: rgb(0, 0, 0) !important;
+    border-radius: 6px;
+}
+
+.time div a,
+.fee div a,
+.number div a,
+.date div a {
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0) !important;
+    line-height: 2em;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: block !important;
+}
+
+.time div a ul,
+.fee div a ul,
+.number div a ul,
+.date div a ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.modal ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal button {
+    width: 145px;
+    height: 60px;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 12px;
+    background-color: #333333;
+    text-transform: uppercase;
+    color: white;
+    font-size: 22px;
+    position: relative;
+    left: 50%;
+    margin-left: -72.5px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+    font-weight: bold;
+    font-family: "Dosis", sans-serif;
+}
+
+.modal button:hover {
+    cursor: pointer;
+    color: #8AEA92;
+    transition: 0.5s;
+}
+
+.modal a {
+    color: white;
+    text-decoration: none;
+}
+
+.details li {
+    margin: 1em 0;
+    list-style-type: disc !important;
+}
+
+
+/*Small screen*/
+
+@media (max-width: 576px) {
+    .jumbotron h1 {
+        font-size: 24px;
+    }
+    .jumbotron {
+        height: 150px;
+        padding-bottom: 40px;
+    }
+    .list {
+        height: 2940px;
+        padding: 10px;
+        padding-top: 70px;
+    }
+    .list .nos {
+        padding: 30px;
+        height: 320px;
+        margin-bottom: 5em;
+    }
+    .time div,
+    .fee div,
+    .number div,
+    .date div {
+        width: 190px;
+        height: 90px;
+        font-size: 17px;
+    }
+    .number div {
+        height: 180px;
+    }
+    .number div li:nth-child(1) {
+        margin-bottom: 1em;
+    }
+    .time div a,
+    .fee div a,
+    .number div a,
+    .date div a {
+        font-size: 15px;
+    }
+    .modal {
+        border: 20px solid rgba(0, 0, 0, 0);
+    }
+    .modal-content {
+        width: 97%;
+        padding: 15px 20px;
+    }
+    .time,
+    .fee,
+    .number,
+    .date {
+        height: 170px;
+        padding: 10px;
+    }
+    .number {
+        height: 250px;
+    }
+    .list .nos span h3 {
+        font-size: 15px;
+    }
+    .description,
+    .details {
+        font-size: 14px;
+    }
+    .modal h4 {
+        font-size: 22px;
+    }
+    .modal h5 {
+        font-size: 18px;
+    }
+    .modal button {
+        font-size: 18px;
+    }
+    .social-media-icons a {
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 19px;
+    }
+    .social-media-icons {
+        height: 130px;
+    }
+    .list .nos>.modal-div {
+        font-size: 14px;
+    }
+    .list .nos span {
+        height: 80px;
+        font-size: 17px;
+    }
+    .list .nos>div img {
+        width: 90px;
+    }
+}
+
+
+/*Mobile*/
+
+@media (min-width: 577px) and (max-width: 767px) {
+    .jumbotron h1 {
+        font-size: 24px;
+    }
+    .jumbotron {
+        height: 190px;
+        padding-bottom: 50px;
+    }
+    .list {
+        height: 3050px;
+        padding-top: 80px;
+    }
+    .list .nos {
+        height: 350px;
+        padding: 30px 70px;
+        margin-bottom: 4em;
+    }
+    .list .nos>.modal-div {
+        font-size: 15px;
+    }
+    .list .nos span {
+        height: 70px;
+        font-size: 18px;
+    }
+    .time div,
+    .fee div,
+    .number div,
+    .date div {
+        width: 190px;
+        height: 160px;
+        font-size: 16px;
+    }
+    .time div a,
+    .fee div a,
+    .number div a,
+    .date div a {
+        font-size: 15px;
+    }
+    .number div li:nth-child(1) {
+        margin-bottom: 0.7em;
+    }
+    .modal-content {
+        width: 90%;
+        padding: 15px 20px;
+    }
+    .time,
+    .fee,
+    .number,
+    .date {
+        height: 280px;
+        padding: 10px;
+    }
+    .list .nos span h3 {
+        font-size: 19px;
+    }
+    .description,
+    .details {
+        font-size: 15px;
+    }
+    .modal h4 {
+        font-size: 23px;
+    }
+    .modal h5 {
+        font-size: 18px;
+    }
+    .modal button {
+        font-size: 19px;
+    }
+}
+
+
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .list {
+        height: 1950px;
+        padding: 30px;
+        padding-top: 80px;
+    }
+    .list .nos {
+        padding: 30px;
+        margin-bottom: 5em;
+    }
+    .time div,
+    .fee div,
+    .number div,
+    .date div {
+        width: 200px;
+        height: 170px;
+        font-size: 17px;
+    }
+    .time div a,
+    .fee div a,
+    .number div a,
+    .date div a {
+        font-size: 17px;
+    }
+    .number div li:nth-child(1) {
+        margin-bottom: 1em;
+    }
+    .modal-content {
+        width: 93%;
+        padding: 20px 30px;
+    }
+    .time,
+    .fee,
+    .number,
+    .date {
+        height: 270px;
+        padding: 10px;
+    }
+    .list .nos span {
+        height: 115px;
+        font-size: 19px;
+    }
+    .list .nos>.modal-div {
+        height: 50%;
+    }
+    .modal-div p {
+        -webkit-line-clamp: 3;
+    }
+}
+
+
+/*Desktop*/
+
+
+/*# sourceMappingURL=workshop.css.map */
+
+html {
+    overflow: auto;
+}
+
+html,
+body,
+div,
+iframe {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    border: none;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    border: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/* ---------------- Coming Soon -----------------*/
+
+.modal button.coming_soon {
+    opacity: .6;
+    font-size: 19px;
+    width: 165px;
+    letter-spacing: 1px;
+    margin-left: -82.5px;
+}
+
+.modal button.coming_soon:hover {
+    cursor: auto;
+    color: white;
+    transition: 0.5s;
+}
